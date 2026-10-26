@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#080d0b">
-  <meta name="description" content="Marvel's developer portfolio: software development, machine learning, and cybersecurity projects.">
-  <title>Marvel | Developer & Computer Science Student</title>
+  <meta name="theme-color" content="#f7f8fa">
+  <meta name="description" content="Marvel is a computer science student at Ambrose Alli University working on web applications, machine learning, and cybersecurity projects.">
+  <title>Marvel | Software Development Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -13,81 +13,109 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="ambient ambient-one" aria-hidden="true"></div>
-  <div class="ambient ambient-two" aria-hidden="true"></div>
   <header class="site-header">
-    <a class="brand" href="#home" aria-label="Marvel home"><span class="brand-mark">M<span>.</span></span><span class="brand-name">MARVEL<span class="brand-slash">/</span>DEV</span></a>
-    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span></button>
-    <nav class="nav-links" aria-label="Main navigation">
-      <a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact" class="nav-contact">Let's connect <span>↗</span></a>
-    </nav>
+    <div class="header-inner">
+      <a class="wordmark" href="#home" aria-label="Marvel portfolio home">Marvel<span>.</span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#about">About</a>
+        <a class="nav-cta" href="#contact">Contact <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section class="hero section-wrap" id="home">
-      <div class="hero-copy">
-        <div class="eyebrow"><span class="status-dot"></span> COMPUTER SCIENCE STUDENT <span class="eyebrow-divider">/</span> BUILDER</div>
-        <h1>Building useful things.<br>Breaking down <span class="accent-text">hard problems.</span></h1>
-        <p class="hero-description">I'm Marvel, a computer science student interested in software engineering, machine learning, and cybersecurity. I turn ideas into practical projects and learn by building.</p>
-        <div class="hero-actions"><a class="button button-primary" href="#projects">Explore my work <span>↓</span></a><a class="button button-quiet" href="#contact">Get in touch <span>↗</span></a></div>
-        <div class="hero-meta"><span><span class="meta-symbol">⌘</span> CODE WITH PURPOSE</span><span><span class="meta-symbol">⌁</span> LEARN BY BUILDING</span></div>
-      </div>
-      <div class="terminal-card" aria-label="Decorative terminal showing developer interests">
-        <div class="terminal-top"><div class="window-dots"><i></i><i></i><i></i></div><span>marvel@dev: ~</span><span class="terminal-lock">▣ SECURE SHELL</span></div>
-        <div class="terminal-body">
-          <p><span class="terminal-muted">01</span> <span class="terminal-prompt">$</span> whoami</p><p class="terminal-output">marvel / developer-in-training</p>
-          <p><span class="terminal-muted">02</span> <span class="terminal-prompt">$</span> cat interests.txt</p>
-          <p class="terminal-output">software_engineering<br>machine_learning<br>cybersecurity</p>
-          <p><span class="terminal-muted">03</span> <span class="terminal-prompt">$</span> status --current</p>
-          <p class="terminal-output"><span class="terminal-live">●</span> learning. building. improving.</p>
-          <p class="terminal-command"><span class="terminal-prompt">$</span> <span class="cursor">▋</span></p>
+    <section class="intro content-width" id="home">
+      <div class="intro-main">
+        <p class="eyebrow"><span class="availability-dot"></span> COMPUTER SCIENCE STUDENT · NIGERIA</p>
+        <h1>I build software to solve <span>real problems.</span></h1>
+        <p class="intro-summary">I'm Marvel, a computer science student at Ambrose Alli University focused on web development, machine learning, and cybersecurity. I learn by building, testing, and improving practical projects.</p>
+        <div class="intro-actions">
+          <a class="button button-primary" href="#projects">View selected projects <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="https://github.com/Masksm" target="_blank" rel="noreferrer">GitHub profile <span aria-hidden="true">↗</span></a>
         </div>
-        <div class="terminal-footer"><span>UTF-8</span><span>MAIN BRANCH</span><span>● READY</span></div>
       </div>
-      <a class="scroll-cue" href="#about"><span class="scroll-line"></span> SCROLL TO EXPLORE</a>
+      <aside class="quick-facts" aria-label="Professional overview">
+        <div class="fact"><span class="fact-label">CURRENT FOCUS</span><strong>Software · ML · Security</strong></div>
+        <div class="fact"><span class="fact-label">BUILDING WITH</span><strong>Python, JavaScript, SQL</strong></div>
+        <div class="fact"><span class="fact-label">APPROACH</span><strong>Project-based learning</strong></div>
+        <a class="fact-link" href="#contact">Open to learning and collaboration <span aria-hidden="true">↗</span></a>
+      </aside>
     </section>
 
-    <section class="section-wrap about-section" id="about">
-      <div class="section-label"><span>01</span> / ABOUT ME</div>
-      <div class="about-grid"><div><h2>Curious by nature.<br><span class="muted-heading">Practical by choice.</span></h2></div><div class="about-copy"><p>I'm studying computer science at Ambrose Alli University (AAU), Nigeria. I enjoy understanding how systems work, solving technical problems, and turning what I learn into working software.</p><p>My current work spans web applications, image classification with deep learning, and machine-learning approaches to network intrusion detection.</p><div class="about-note"><span class="note-icon">↳</span> My rule: build it, test it, understand it, improve it.</div></div></div>
-    </section>
+    <section class="section content-width" id="projects">
+      <div class="section-heading">
+        <div><p class="section-kicker">SELECTED WORK</p><h2>Projects</h2></div>
+        <p class="section-description">A selection of projects I've worked on, the problems they address, and the tools behind them.</p>
+      </div>
 
-    <section class="section-wrap projects-section" id="projects">
-      <div class="section-heading"><div><div class="section-label"><span>02</span> / SELECTED WORK</div><h2>Projects in progress<span class="accent-text">.</span></h2></div><span class="heading-side-note">REAL PROBLEMS. HANDS-ON WORK.</span></div>
+      <article class="project project-primary">
+        <div class="project-main">
+          <div class="project-meta"><span>01 / WEB APPLICATION</span><span class="status-label"><i></i> IN DEVELOPMENT</span></div>
+          <h3>Amora</h3>
+          <p class="project-lede">A social web application built around anonymous messages, personal links, and community features.</p>
+          <p class="project-detail">I work on the frontend and backend integration, including authentication, database access, messaging workflows, and access-control policies. The focus is on building useful features while protecting user data.</p>
+          <div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Supabase</span><span>PostgreSQL</span></div>
+          <div class="project-actions"><a class="button button-primary" href="https://amora-puce-seven.vercel.app/" target="_blank" rel="noreferrer">View live app <span aria-hidden="true">↗</span></a><a class="text-link" href="https://github.com/Masksm/WhatsApp-admin" target="_blank" rel="noreferrer">Source code <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <div class="project-aside">
+          <div class="project-aside-label">PROJECT SNAPSHOT</div>
+          <div class="snapshot-row"><span>Type</span><strong>Full-stack web application</strong></div>
+          <div class="snapshot-row"><span>Backend</span><strong>Supabase Auth & PostgreSQL</strong></div>
+          <div class="snapshot-row"><span>Key concerns</span><strong>Authentication, RLS, messaging</strong></div>
+          <div class="snapshot-note">Active development · Features and security controls are still being refined.</div>
+        </div>
+      </article>
+
       <div class="project-grid">
-        <article class="project-card project-featured">
-          <div class="project-topline"><span class="project-number">PROJECT_01</span><span class="project-state"><i></i> WEB APPLICATION</span></div>
-          <div class="project-visual amora-visual" aria-hidden="true"><div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div><div class="amora-symbol">a<span>♥</span></div><div class="visual-caption">CONNECTION / COMMUNITY</div></div>
-          <div class="project-content"><div class="tag-row"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Supabase</span></div><h3>Amora</h3><p>A social and anonymous-messaging web application with account authentication, personal links, and ongoing work on messaging and community features.</p><div class="project-links"><a href="https://amora-puce-seven.vercel.app/" target="_blank" rel="noreferrer">Live application <span>↗</span></a><a href="https://github.com/Masksm/WhatsApp-admin" target="_blank" rel="noreferrer">Source code <span>↗</span></a></div></div>
+        <article class="project project-card">
+          <div class="project-meta"><span>02 / MACHINE LEARNING</span><span class="project-index">PYTHON</span></div>
+          <h3>CNN Image Classifier</h3>
+          <p>Image classification for six scene categories: buildings, forest, glacier, mountain, sea, and street. The project compares convolutional neural networks and transfer-learning approaches.</p>
+          <div class="result-block"><span class="result-value">91.70%</span><span class="result-caption">Best reported model accuracy</span></div>
+          <div class="tag-list"><span>Python</span><span>TensorFlow</span><span>Keras</span><span>Streamlit</span></div>
+          <div class="project-actions"><a class="text-link" href="https://github.com/Masksm" target="_blank" rel="noreferrer">Find source on GitHub <span aria-hidden="true">↗</span></a></div>
         </article>
-        <article class="project-card">
-          <div class="project-topline"><span class="project-number">PROJECT_02</span><span class="project-state"><i></i> DEEP LEARNING</span></div>
-          <div class="project-visual ml-visual" aria-hidden="true"><div class="ml-grid"></div><div class="ml-node node-a"></div><div class="ml-node node-b"></div><div class="ml-node node-c"></div><div class="ml-node node-d"></div><div class="ml-node node-e"></div><div class="ml-connector"></div><div class="ml-label">IMAGE CLASSIFICATION / CNN</div></div>
-          <div class="project-content"><div class="tag-row"><span>Python</span><span>TensorFlow</span><span>Keras</span></div><h3>CNN Image Classifier</h3><p>A deep-learning image classifier for six scene categories, built and evaluated with TensorFlow/Keras. Best reported model accuracy: 91.70%.</p><div class="project-links"><a href="https://github.com/Masksm" target="_blank" rel="noreferrer">Explore repositories <span>↗</span></a></div></div>
-        </article>
-        <article class="project-card">
-          <div class="project-topline"><span class="project-number">PROJECT_03</span><span class="project-state"><i></i> CYBERSECURITY / ML</span></div>
-          <div class="project-visual security-visual" aria-hidden="true"><div class="security-ring ring-a"></div><div class="security-ring ring-b"></div><div class="security-shield">⌑</div><div class="security-coordinates">TRAFFIC ANALYSIS<br>THREAT DETECTION</div><div class="security-scan"></div></div>
-          <div class="project-content"><div class="tag-row"><span>Python</span><span>pandas</span><span>scikit-learn</span></div><h3>Network Intrusion Detection</h3><p>A machine-learning project exploring network traffic classification to distinguish benign activity from potential intrusions using CICIDS data.</p><div class="project-links"><a href="https://github.com/Masksm" target="_blank" rel="noreferrer">Explore repositories <span>↗</span></a></div></div>
+        <article class="project project-card">
+          <div class="project-meta"><span>03 / CYBERSECURITY</span><span class="project-index">ML</span></div>
+          <h3>Network Intrusion Detection</h3>
+          <p>A machine-learning project using CICIDS network traffic data to explore classification of benign traffic and attack categories, including data cleaning and model evaluation.</p>
+          <div class="result-block result-text"><span class="result-value">CICIDS</span><span class="result-caption">Large-scale labelled traffic dataset</span></div>
+          <div class="tag-list"><span>Python</span><span>pandas</span><span>scikit-learn</span><span>Data analysis</span></div>
+          <div class="project-actions"><a class="text-link" href="https://github.com/Masksm" target="_blank" rel="noreferrer">Find source on GitHub <span aria-hidden="true">↗</span></a></div>
         </article>
       </div>
-      <p class="project-footnote"><span>*</span> Project descriptions reflect current work. Links to individual repositories and demos can be refined as each project is published.</p>
+      <p class="project-caveat">Project results are self-reported. Source links for the CNN and intrusion-detection projects currently point to my GitHub profile until their individual repositories are linked here.</p>
     </section>
 
-    <section class="section-wrap skills-section" id="skills">
-      <div class="section-label"><span>03</span> / TOOLKIT</div>
-      <div class="skills-layout"><div><h2>Tools I use.<br><span class="muted-heading">Skills I'm growing.</span></h2><p class="skills-intro">A practical toolkit shaped by coursework and hands-on projects. Still learning, always testing.</p></div><div class="skill-groups">
-        <div class="skill-group"><span class="skill-index">01</span><div><h3>Programming</h3><div class="skill-pills"><span>Python</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span></div></div></div>
-        <div class="skill-group"><span class="skill-index">02</span><div><h3>Machine Learning</h3><div class="skill-pills"><span>TensorFlow</span><span>Keras</span><span>pandas</span><span>scikit-learn</span></div></div></div>
-        <div class="skill-group"><span class="skill-index">03</span><div><h3>Web & Tools</h3><div class="skill-pills"><span>Git / GitHub</span><span>Supabase</span><span>Vercel</span><span>Streamlit</span></div></div></div>
-        <div class="skill-group"><span class="skill-index">04</span><div><h3>Areas of interest</h3><div class="skill-pills"><span>Cybersecurity</span><span>Network analysis</span><span>Deep learning</span></div></div></div>
-      </div></div>
+    <section class="section section-bordered content-width" id="skills">
+      <div class="section-heading">
+        <div><p class="section-kicker">TECHNICAL TOOLKIT</p><h2>Skills</h2></div>
+        <p class="section-description">Tools used across coursework and current projects. Skill depth continues to grow through implementation and testing.</p>
+      </div>
+      <div class="skills-list">
+        <div class="skill-row"><h3>Programming & web</h3><div class="skill-items"><span>Python</span><span>JavaScript</span><span>HTML</span><span>CSS</span></div></div>
+        <div class="skill-row"><h3>Machine learning & data</h3><div class="skill-items"><span>TensorFlow</span><span>Keras</span><span>pandas</span><span>scikit-learn</span><span>NumPy</span></div></div>
+        <div class="skill-row"><h3>Platforms & tools</h3><div class="skill-items"><span>Git / GitHub</span><span>Supabase</span><span>PostgreSQL</span><span>Vercel</span><span>Streamlit</span></div></div>
+        <div class="skill-row"><h3>Technical interests</h3><div class="skill-items"><span>Application security</span><span>Network intrusion detection</span><span>Deep learning</span><span>Backend development</span></div></div>
+      </div>
     </section>
 
-    <section class="section-wrap contact-section" id="contact">
-      <div class="contact-panel"><div class="section-label"><span>04</span> / CONTACT</div><div class="contact-content"><div><h2>Have a good problem?<br><span class="accent-text">Let's talk.</span></h2><p>I'm interested in learning opportunities, collaboration, and projects that solve real problems.</p></div><div class="contact-links"><a href="https://github.com/Masksm" target="_blank" rel="noreferrer"><span class="contact-link-icon">⌘</span><span><small>CODE & PROJECTS</small>GitHub</span><span class="contact-arrow">↗</span></a><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><span class="contact-link-icon">in</span><span><small>PROFESSIONAL PROFILE</small>LinkedIn <em>(profile link to update)</em></span><span class="contact-arrow">↗</span></a></div></div></div>
+    <section class="section about-section content-width" id="about">
+      <div><p class="section-kicker">BACKGROUND</p><h2>About me</h2></div>
+      <div class="about-content">
+        <p>I'm a computer science student at Ambrose Alli University, Nigeria, building experience through practical software and machine-learning projects.</p>
+        <p>I value clear problem-solving, understanding how systems behave, and testing work instead of relying on assumptions. I'm particularly interested in opportunities where I can contribute, learn from experienced developers, and strengthen my engineering fundamentals.</p>
+        <div class="education-line"><span class="education-marker" aria-hidden="true"></span><div><strong>Ambrose Alli University (AAU)</strong><span>Computer Science · Student</span></div></div>
+      </div>
+    </section>
+
+    <section class="contact-section content-width" id="contact">
+      <div><p class="section-kicker">GET IN TOUCH</p><h2>Let's discuss the work.</h2><p class="contact-description">For internships, junior opportunities, project collaboration, or technical conversations.</p></div>
+      <div class="contact-actions"><a class="button button-primary" href="https://github.com/Masksm" target="_blank" rel="noreferrer">GitHub profile <span aria-hidden="true">↗</span></a><a class="button button-secondary" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></div>
     </section>
   </main>
-  <footer class="site-footer"><a class="brand footer-brand" href="#home"><span class="brand-mark">M<span>.</span></span><span class="brand-name">MARVEL<span class="brand-slash">/</span>DEV</span></a><span>Designed with intent. Built with code.</span><span>© <span id="year"></span> MARVEL</span></footer>
+
+  <footer class="site-footer content-width"><a class="wordmark" href="#home">Marvel<span>.</span></a><span>Built with HTML, CSS, and JavaScript.</span><span>© <span id="year"></span> Marvel</span></footer>
 </body>
 </html>
