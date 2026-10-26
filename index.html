@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d0b">
+  <meta name="description" content="Marvel's developer portfolio: software development, machine learning, and cybersecurity projects.">
+  <title>Marvel | Developer & Computer Science Student</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Marvel home"><span class="brand-mark">M<span>.</span></span><span class="brand-name">MARVEL<span class="brand-slash">/</span>DEV</span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact" class="nav-contact">Let's connect <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> COMPUTER SCIENCE STUDENT <span class="eyebrow-divider">/</span> BUILDER</div>
+        <h1>Building useful things.<br>Breaking down <span class="accent-text">hard problems.</span></h1>
+        <p class="hero-description">I'm Marvel, a computer science student interested in software engineering, machine learning, and cybersecurity. I turn ideas into practical projects and learn by building.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#projects">Explore my work <span>↓</span></a><a class="button button-quiet" href="#contact">Get in touch <span>↗</span></a></div>
+        <div class="hero-meta"><span><span class="meta-symbol">⌘</span> CODE WITH PURPOSE</span><span><span class="meta-symbol">⌁</span> LEARN BY BUILDING</span></div>
+      </div>
+      <div class="terminal-card" aria-label="Decorative terminal showing developer interests">
+        <div class="terminal-top"><div class="window-dots"><i></i><i></i><i></i></div><span>marvel@dev: ~</span><span class="terminal-lock">▣ SECURE SHELL</span></div>
+        <div class="terminal-body">
+          <p><span class="terminal-muted">01</span> <span class="terminal-prompt">$</span> whoami</p><p class="terminal-output">marvel / developer-in-training</p>
+          <p><span class="terminal-muted">02</span> <span class="terminal-prompt">$</span> cat interests.txt</p>
+          <p class="terminal-output">software_engineering<br>machine_learning<br>cybersecurity</p>
+          <p><span class="terminal-muted">03</span> <span class="terminal-prompt">$</span> status --current</p>
+          <p class="terminal-output"><span class="terminal-live">●</span> learning. building. improving.</p>
+          <p class="terminal-command"><span class="terminal-prompt">$</span> <span class="cursor">▋</span></p>
+        </div>
+        <div class="terminal-footer"><span>UTF-8</span><span>MAIN BRANCH</span><span>● READY</span></div>
+      </div>
+      <a class="scroll-cue" href="#about"><span class="scroll-line"></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <section class="section-wrap about-section" id="about">
+      <div class="section-label"><span>01</span> / ABOUT ME</div>
+      <div class="about-grid"><div><h2>Curious by nature.<br><span class="muted-heading">Practical by choice.</span></h2></div><div class="about-copy"><p>I'm studying computer science at Ambrose Alli University (AAU), Nigeria. I enjoy understanding how systems work, solving technical problems, and turning what I learn into working software.</p><p>My current work spans web applications, image classification with deep learning, and machine-learning approaches to network intrusion detection.</p><div class="about-note"><span class="note-icon">↳</span> My rule: build it, test it, understand it, improve it.</div></div></div>
+    </section>
+
+    <section class="section-wrap projects-section" id="projects">
+      <div class="section-heading"><div><div class="section-label"><span>02</span> / SELECTED WORK</div><h2>Projects in progress<span class="accent-text">.</span></h2></div><span class="heading-side-note">REAL PROBLEMS. HANDS-ON WORK.</span></div>
+      <div class="project-grid">
+        <article class="project-card project-featured">
+          <div class="project-topline"><span class="project-number">PROJECT_01</span><span class="project-state"><i></i> WEB APPLICATION</span></div>
+          <div class="project-visual amora-visual" aria-hidden="true"><div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div><div class="amora-symbol">a<span>♥</span></div><div class="visual-caption">CONNECTION / COMMUNITY</div></div>
+          <div class="project-content"><div class="tag-row"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Supabase</span></div><h3>Amora</h3><p>A social and anonymous-messaging web application with account authentication, personal links, and ongoing work on messaging and community features.</p><div class="project-links"><a href="https://amora-puce-seven.vercel.app/" target="_blank" rel="noreferrer">Live application <span>↗</span></a><a href="https://github.com/Masksm/WhatsApp-admin" target="_blank" rel="noreferrer">Source code <span>↗</span></a></div></div>
+        </article>
+        <article class="project-card">
+          <div class="project-topline"><span class="project-number">PROJECT_02</span><span class="project-state"><i></i> DEEP LEARNING</span></div>
+          <div class="project-visual ml-visual" aria-hidden="true"><div class="ml-grid"></div><div class="ml-node node-a"></div><div class="ml-node node-b"></div><div class="ml-node node-c"></div><div class="ml-node node-d"></div><div class="ml-node node-e"></div><div class="ml-connector"></div><div class="ml-label">IMAGE CLASSIFICATION / CNN</div></div>
+          <div class="project-content"><div class="tag-row"><span>Python</span><span>TensorFlow</span><span>Keras</span></div><h3>CNN Image Classifier</h3><p>A deep-learning image classifier for six scene categories, built and evaluated with TensorFlow/Keras. Best reported model accuracy: 91.70%.</p><div class="project-links"><a href="https://github.com/Masksm" target="_blank" rel="noreferrer">Explore repositories <span>↗</span></a></div></div>
+        </article>
+        <article class="project-card">
+          <div class="project-topline"><span class="project-number">PROJECT_03</span><span class="project-state"><i></i> CYBERSECURITY / ML</span></div>
+          <div class="project-visual security-visual" aria-hidden="true"><div class="security-ring ring-a"></div><div class="security-ring ring-b"></div><div class="security-shield">⌑</div><div class="security-coordinates">TRAFFIC ANALYSIS<br>THREAT DETECTION</div><div class="security-scan"></div></div>
+          <div class="project-content"><div class="tag-row"><span>Python</span><span>pandas</span><span>scikit-learn</span></div><h3>Network Intrusion Detection</h3><p>A machine-learning project exploring network traffic classification to distinguish benign activity from potential intrusions using CICIDS data.</p><div class="project-links"><a href="https://github.com/Masksm" target="_blank" rel="noreferrer">Explore repositories <span>↗</span></a></div></div>
+        </article>
+      </div>
+      <p class="project-footnote"><span>*</span> Project descriptions reflect current work. Links to individual repositories and demos can be refined as each project is published.</p>
+    </section>
+
+    <section class="section-wrap skills-section" id="skills">
+      <div class="section-label"><span>03</span> / TOOLKIT</div>
+      <div class="skills-layout"><div><h2>Tools I use.<br><span class="muted-heading">Skills I'm growing.</span></h2><p class="skills-intro">A practical toolkit shaped by coursework and hands-on projects. Still learning, always testing.</p></div><div class="skill-groups">
+        <div class="skill-group"><span class="skill-index">01</span><div><h3>Programming</h3><div class="skill-pills"><span>Python</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span></div></div></div>
+        <div class="skill-group"><span class="skill-index">02</span><div><h3>Machine Learning</h3><div class="skill-pills"><span>TensorFlow</span><span>Keras</span><span>pandas</span><span>scikit-learn</span></div></div></div>
+        <div class="skill-group"><span class="skill-index">03</span><div><h3>Web & Tools</h3><div class="skill-pills"><span>Git / GitHub</span><span>Supabase</span><span>Vercel</span><span>Streamlit</span></div></div></div>
+        <div class="skill-group"><span class="skill-index">04</span><div><h3>Areas of interest</h3><div class="skill-pills"><span>Cybersecurity</span><span>Network analysis</span><span>Deep learning</span></div></div></div>
+      </div></div>
+    </section>
+
+    <section class="section-wrap contact-section" id="contact">
+      <div class="contact-panel"><div class="section-label"><span>04</span> / CONTACT</div><div class="contact-content"><div><h2>Have a good problem?<br><span class="accent-text">Let's talk.</span></h2><p>I'm interested in learning opportunities, collaboration, and projects that solve real problems.</p></div><div class="contact-links"><a href="https://github.com/Masksm" target="_blank" rel="noreferrer"><span class="contact-link-icon">⌘</span><span><small>CODE & PROJECTS</small>GitHub</span><span class="contact-arrow">↗</span></a><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><span class="contact-link-icon">in</span><span><small>PROFESSIONAL PROFILE</small>LinkedIn <em>(profile link to update)</em></span><span class="contact-arrow">↗</span></a></div></div></div>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="brand footer-brand" href="#home"><span class="brand-mark">M<span>.</span></span><span class="brand-name">MARVEL<span class="brand-slash">/</span>DEV</span></a><span>Designed with intent. Built with code.</span><span>© <span id="year"></span> MARVEL</span></footer>
+</body>
+</html>
